@@ -3093,50 +3093,64 @@
     
     <!-- Stylesheet -->
     <style>
-    #ua-menu {
+    #ua-home-navbar {
       padding: 20px;
       transition: all 0.8s;
-      background-color: #222222 !important;
-      padding: 6px;
+      margin-top:9px;
     }
-    #ua-menu ul, #ua-menu ol {
+    #ua-home-navbar.on {
+      background-color: #222222 !important;
+      padding: 6px; !important;
+    }
+    #ua-home-navbar ul, #ua-home-navbar ol {
       padding: 0;
       webkit-padding: 0;
       moz-padding: 0;
     }
-    #ua-menu.navbar-default {
+    #ua-home-navbar.navbar-default {
       background-color: rgba(248, 248, 248, 0);
       border-color: rgba(231, 231, 231, 0);
     }
-    #ua-menu a.navbar-brand {
+    #ua-home-navbar a.navbar-brand {
       font-family: 'Lato', sans-serif;
       text-transform: uppercase;
       font-size: 22px;
       color: #fff;
       font-weight: 900;
     }
-    #ua-menu.navbar-default .navbar-nav > li > a {
+    #ua-home-navbar.navbar-default .navbar-nav > li > a {
       text-transform: uppercase;
       color: #fff;
       font-size: 12px;
       letter-spacing: 1px;
     }
-    #ua-menu.navbar-default .navbar-nav > li > a.smooth.stand-out-colour {
+    #ua-home-navbar.navbar-default .navbar-nav > li > a.smooth.stand-out-colour {
       color: #fcac45;
     }
     #ua-home {
-      margin-bottom: -20px;
-    }
-    #ua-home .overlay {
-      background color: #fff;
+      background: url("http://i.imgur.com/iMPWxoA.jpg");
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
       background-repeat: no-repeat;
+      color: #cfcfcf;
+      width: auto;
+      height: auto;
     }
-    #ua-home .overlay .container {
-      background-color: #fff;
-      width: 70%;
+    #ua-home .overlay {
+      background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+      height: 750px;
+      background-attachment: fixed;
+    }
+    #ua-home .overlay .content {
+      position: rel ative;
+      padding: 20% 0 0;
     }
     #ua-home a.fa.fa-angle-down {
       padding: 10px 15px;
@@ -3163,16 +3177,246 @@
     }
     #ua-home p.common {
       font-family: 'Open Sans', sans-serif;
+      color: #e3e3e3;
+      text-align: center;
+    }
+    #ua-home-about {
+      padding: 80px 0;
+    }
+    #ua-home-about .section-title h4 {
+      text-transform: uppercase;
+    }
+    #ua-home-about .section-title h2 {
+      text-transform: uppercase;
+      line-height: 20px;
+      margin:  0;
+      font-weight: 300;
+    }
+    #ua-home-about .section-title hr {
+      border-color: #fcac45;
+      border-width: 4px;
+      width: 60px;
+      float: left;
+      clear: both;
+    }
+    #ua-home-about p.common {
+      font-size: 16px;
+      margin: 12px 0 0;
+      line-height: 24px;
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+    }
+    #ua-home-about .clearfix:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0;
+    }
+    #ua-home-about .clearfix {
+      display: inline-block;
+      height: 1%;
+      display: block;
+    }
+    #ua-home-team {
+      background: url("http://i.imgur.com/kMqrk72.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #ffffff;
+    }
+    #ua-home-team .overlay {
+      background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+      height: auto;
+      background-attachment: fixed;
+      padding: 80px 0;
+    }
+    #ua-home-team .section-title.center {
+      padding: 30px 0;
+    }
+    #ua-home-team .section-title h2, #ua-home-team.center h2 {
+      font-weight: 300;
+    }
+    #ua-home-team .section-title.center .line {
+      border-top: 4px solid #fcac45;
+      height: 10px;
+      width: 60px;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    #ua--home-team .section-title.center hr {
+      border-top: 4px solid rgba(252, 172, 69, 0.34);
+      width: 40px;
+      text-align: center;
+      margin-top: 10px;
+      left: 17%;
+    }
+    #ua-home-team #team {
+      margin: 0 auto;
+    }
+    #ua-home-team #team .item {
+      padding: 0;
+      margin: 15px;
+      color: #fff;
+      text-align: center;
+    }
+    #ua-home-team img.img-circle.team-img {
+      width: 120px;
+      height: 120px;
+      border: 4px solid transparent;
+      transition: all 0.5s;
+    }
+    #ua-home-team .item .thumbnail:hover>img.img-circle.team-img {
+      border: 4px solid #FCAC45;
+    }
+    #ua-home-team .thumbnail {
+      background: transparent;
+      border: 0;
+    }
+    #ua-home-team .item .thumbnail .tooltiptext {
+      display: none;
+      position: absolute;
+      left: 10%;
+      width: 200px;
+      padding: 5px;
+      margin: 10px;
+      z-index: auto;
+      color: #fcac45;
+      background: #fff;
+      text-align: center;
+      border-radius: 6px;
+      border: 1px solid #666666;
+    }
+    #ua-home-team h3 {
+      font-size: 18px;
+      font-weight: 900;
+      text-align: center;
+      color: #fff;
+    }
+    #ua-home-team p.common {
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      color: #fff;
+    }
+    #ua-home-team .owl-theme .owl-controls .owl-page span {
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin: 5px 7px;
+      filter: Alpha(Opacity=1);
+      opacity: 1;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 20px;
+      border-radius: 0;
+      background: #ffffff;
+      transition: all 0.5s;
+    }
+    #ua-home-team .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+      filter: Alpha(Opacity=100);
+      opacity: 1;
+      background: #FCAC45;
+    }
+    #ua-home-team .owl-theme .owl-controls .owl-page.active span {
+      background: #FCAC45;
+    }
+    #ua-footer {
+      background-color: #222222;
+    }
+    #ua-footer a {
+      text-align: center;
+      color: #fff;
+    }
+    #ua-footer hr {
+      border-color: #222222;
+    }
+    #ua-main {
+      margin-bottom: -20px;
+    }
+    #ua-main .overlay {
+      background color: #fff;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+    #ua-main .overlay .container {
+      background-color: #fff;
+      width: 70%;
+    }
+    #ua-main a.fa.fa-angle-down {
+      padding: 10px 15px;
+      color: #fff;
+      border: 2px solid #b4b4b4;
+      border-radius: 50%;
+      font-size: 24px;
+      margin-top: 200px;
+      transition: all 0.5s;
+    }
+    #ua-main a.fa.fa-angle-down:hover {
+      background: #fcac45;
+      color: #ffffff;
+      border: 2px solid #fcac45;
+    }
+    #ua-main h1 {
+      text-transform: uppercase;
+      font-family: 'Lato', sans-serif;
+    }
+    #ua-main h1 strong {
+      font-weight: 900;
+      color: #fcac45;
+      font-family: 'Lato', sans-serif;
+    }
+    #ua-main p.common {
+      font-family: 'Open Sans', sans-serif;
       color: #000;
       text-align: center;
     }
-    #ua-home ol.carousel-indicators {
+    #ua-main ol.carousel-indicators {
       margin-left: -30%;
+    }
+    #ua-main-navbar {
+      padding: 6px;
+      margin-top:9px;
+      background-color: #222222 !important;
+    }
+    #ua-main-navbar ul, #ua-main-navbar ol {
+      padding: 0;
+      webkit-padding: 0;
+      moz-padding: 0;
+    }
+    #ua-main-navbar.navbar-default {
+      background-color: rgba(248, 248, 248, 0);
+      border-color: rgba(231, 231, 231, 0);
+    }
+    #ua-main-navbar a.navbar-brand {
+      font-family: 'Lato', sans-serif;
+      text-transform: uppercase;
+      font-size: 22px;
+      color: #fff;
+      font-weight: 900;
+    }
+    #ua-main-navbar.navbar-default .navbar-nav > li > a {
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+    #ua-main-navbar.navbar-default .navbar-nav > li > a.smooth.stand-out-colour {
+      color: #fcac45;
     }
     </style> 
   </head>
   <body>
-    <nav id="ua-menu" class="navbar navbar-default navbar-fixed-top">
+    <nav id="ua-main-navbar" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -3188,15 +3432,15 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a class="smooth" href="#ua-index1">About</a></li>
-            <li><a class="smooth" href="#ua-index2">More Information</a></li>
+            <li><a class="smooth" href="#ua-main-index1">About</a></li>
+            <li><a class="smooth" href="#ua-main-index2">More Information</a></li>
             <li><a href="http://2017.igem.org/Team:UAlberta/Description">Home</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
     </nav>
     
-    <div id="ua-home" class="text-center">
+    <div id="ua-main" class="text-center">
       <div class="overlay">
         <div class="container">
           <div class="page-header">
@@ -3241,7 +3485,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-12" id="ua-index1">
+          <div class="col-lg-12" id="ua-main-index1">
             <h1>About</h1>
             <hr>
             <p class="common">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et nulla at sapien fermentum auctor. Ut auctor libero lectus. Maecenas ultrices interdum neque eget sagittis. Proin at lacus venenatis, efficitur dolor vel, tempor nisl. Vestibulum ac lobortis mi. Nulla nec vehicula ex. Praesent pretium dapibus dolor, in vehicula mauris pellentesque at. Sed at tempus enim. Pellentesque vel pharetra massa, sit amet porta nibh. Duis orci ex, viverra placerat dignissim sed, ornare vulputate libero. Suspendisse mauris leo, finibus ut velit sit amet, gravida placerat diam. Nunc congue aliquam dolor vitae varius. In blandit sem vel purus lacinia vulputate. Nullam vestibulum suscipit diam, vel bibendum dolor condimentum tincidunt. Fusce sapien lectus, suscipit et elit a, dapibus laoreet est.</p>
@@ -3261,7 +3505,7 @@
             </div>
             <div class="clearfix"></div>
             <hr>
-            <div class="page-header" id="ua-index2">
+            <div class="page-header" id="ua-main-index2">
               <h1>More Information</h1>
             </div>
               <p class="common">Ut eu massa a leo pellentesque viverra. Aliquam at elit egestas, placerat odio sed, porttitor nulla. Suspendisse luctus pharetra purus id vehicula. Integer lobortis iaculis metus quis ultrices. Nullam dictum, orci eget gravida hendrerit, ante nulla tincidunt sem, dapibus imperdiet dolor metus vitae massa. Quisque feugiat ipsum vel lectus varius egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
