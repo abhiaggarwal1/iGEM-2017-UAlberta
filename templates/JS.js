@@ -167,14 +167,14 @@ function main() {
         singleItem:true
         });
 
-      $("#ua-menu a.smooth").hover(function() {
+      $("#ua-home-navbar a.smooth").hover(function() {
         $(this).toggleClass("stand-out-colour");
       });
 
-      $("#ua-team .item .thumbnail").hover(function() {
-        $("#ua-team .item .thumbnail .tooltiptext").css("display", "block");
+      $("#ua-home-team .item .thumbnail").hover(function() {
+        $("#ua-home-team .item .thumbnail .tooltiptext").css("display", "block");
       }, function() {
-        $("#ua-team .item .thumbnail .tooltiptext").css("display", "none");
+        $("#ua-home-team .item .thumbnail .tooltiptext").css("display", "none");
       });
 
     });
