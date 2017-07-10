@@ -801,7 +801,7 @@ body {background-color:white; }
   letter-spacing: 1px;
 }
 #ua-home-navbar.navbar-default .navbar-nav > li > a.smooth.stand-out-colour {
-  color: #fcac45;
+  color: #ffd700;
 }
 #ua-home {
   background: url("http://i.imgur.com/iMPWxoA.jpg");
@@ -838,9 +838,9 @@ body {background-color:white; }
   transition: all 0.5s;
 }
 #ua-home a.fa.fa-angle-down:hover {
-  background: #fcac45;
+  background: #ffd700;
   color: #ffffff;
-  border: 2px solid #fcac45;
+  border: 2px solid #ffd700;
 }
 #ua-home h1 {
   text-transform: uppercase;
@@ -848,7 +848,7 @@ body {background-color:white; }
 }
 #ua-home h1 strong {
   font-weight: 900;
-  color: #fcac45;
+  color: #ffd700;
   font-family: 'Lato', sans-serif;
 }
 #ua-home p.common {
@@ -869,7 +869,7 @@ body {background-color:white; }
   font-weight: 300;
 }
 #ua-home-about .section-title hr {
-  border-color: #fcac45;
+  border-color: #ffd700;
   border-width: 4px;
   width: 60px;
   float: left;
@@ -880,7 +880,6 @@ body {background-color:white; }
   margin: 12px 0 0;
   line-height: 24px;
   font-family: 'Open Sans', sans-serif;
-  text-align: center;
 }
 #ua-home-about .clearfix:after {
   visibility: hidden;
@@ -896,7 +895,7 @@ body {background-color:white; }
   display: block;
 }
 #ua-home-team {
-  background: url("http://i.imgur.com/kMqrk72.jpg");
+  background: url("http://2017.igem.org/wiki/images/a/ab/T--UAlberta--Image-001.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -922,7 +921,7 @@ body {background-color:white; }
   font-weight: 300;
 }
 #ua-home-team .section-title.center .line {
-  border-top: 4px solid #fcac45;
+  border-top: 4px solid #ffd700;
   height: 10px;
   width: 60px;
   text-align: center;
@@ -952,7 +951,7 @@ body {background-color:white; }
   transition: all 0.5s;
 }
 #ua-home-team .item .thumbnail:hover>img.img-circle.team-img {
-  border: 4px solid #FCAC45;
+  border: 4px solid #ffd700;
 }
 #ua-home-team .thumbnail {
   background: transparent;
@@ -966,7 +965,7 @@ body {background-color:white; }
   padding: 5px;
   margin: 10px;
   z-index: auto;
-  color: #fcac45;
+  color: #ffd700;
   background: #fff;
   text-align: center;
   border-radius: 6px;
@@ -999,13 +998,14 @@ body {background-color:white; }
 #ua-home-team .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
   filter: Alpha(Opacity=100);
   opacity: 1;
-  background: #FCAC45;
+  background: #ffd700;
 }
 #ua-home-team .owl-theme .owl-controls .owl-page.active span {
-  background: #FCAC45;
+  background: #ffd700;
 }
 #ua-footer {
   background-color: #222222;
+  margin-bottom: -20px;
 }
 #ua-footer a {
   text-align: center;
@@ -1014,17 +1014,14 @@ body {background-color:white; }
 #ua-footer hr {
   border-color: #222222;
 }
-#ua-main {
-  margin-bottom: -20px;
+#ua-footer h2 {
+  margin-top: 0px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffd700;
 }
-#ua-main .overlay {
-  background color: #fff;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-#ua-main .overlay .container {
+#ua-main .container-fluid {
   background-color: #fff;
   width: 70%;
 }
@@ -1038,17 +1035,19 @@ body {background-color:white; }
   transition: all 0.5s;
 }
 #ua-main a.fa.fa-angle-down:hover {
-  background: #fcac45;
+  background: #ffd700;
   color: #ffffff;
-  border: 2px solid #fcac45;
+  border: 2px solid #ffd700;
 }
 #ua-main h1 {
+  margin-top: 0px;
+  padding-top: 0.17em;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
 }
 #ua-main h1 strong {
   font-weight: 900;
-  color: #fcac45;
+  color: #ffd700;
   font-family: 'Lato', sans-serif;
 }
 #ua-main p.common {
@@ -1060,8 +1059,10 @@ body {background-color:white; }
   margin-left: -30%;
 }
 #ua-main-navbar {
-  padding: 6px;
-  margin-top:9px;
+  margin-top: -12px;
+  margin-bottom: 0px;
+  border-radius: unset;
+  padding: 6px !important;
   background-color: #222222 !important;
 }
 #ua-main-navbar ul, #ua-main-navbar ol {
@@ -1087,5 +1088,28 @@ body {background-color:white; }
   letter-spacing: 1px;
 }
 #ua-main-navbar.navbar-default .navbar-nav > li > a.smooth.stand-out-colour {
-  color: #fcac45;
+  color: #ffd700;
+}
+@media screen and (min-width: 992px){
+  #ua-main-sidenav {
+    margin-top: 100px;
+  }
+  #ua-main-sidenav.affix {
+    margin-top: 0px;
+    padding: 2em;
+    box-shadow: 0px 5px 5px #bdbdbd;
+    top: 40px !important;
+    transform: translateX(-10%);
+  }
+  #ua-main-sidenav li a {
+    padding: 5px;
+  }
+  #ua-main-sidenav ul {
+    list-style: none;
+  }
+}
+@media screen and (min-width: 1200px){
+  #ua-main-sidenav.affix {    
+    transform: translateX(30%);
+  }
 }
